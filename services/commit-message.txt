@@ -1,0 +1,49 @@
+Each commit message consists of a type, an optional scope, and a subject, followed by a more detailed body and footer if needed.
+
+1. Commit Message Structure
+
+<type>(<scope>): <subject>
+
+<body>
+
+<footer>
+2. Commit Message Components
+
+Type: Specifies the purpose of the commit. Common types include:
+feat: A new feature.
+fix: A bug fix.
+chore: Routine tasks, like maintenance or config changes.
+docs: Documentation changes.
+style: Code style changes (formatting, missing semi-colons, etc.) that don’t affect logic.
+refactor: Code changes that neither fix a bug nor add a feature (e.g., renaming a variable).
+test: Adding or modifying tests.
+perf: Performance improvements.
+ci: Continuous integration-related changes.
+build: Changes that affect the build system or external dependencies.
+Scope: A specific module, service, or area affected by the changes (optional). For example, products, auth, or payments.
+Subject: A short summary of the change (imperative mood, present tense, no period). Keep it concise but descriptive.
+Body: A more detailed explanation of the change, including the reason for the change and any additional context (optional).
+Footer: For referencing issues, breaking changes, or additional notes (optional).
+3. Examples of Commit Messages
+
+Here are a few examples based on the structure above.
+
+Feature Commit:
+feat(products): add product listing page
+
+- Implemented product list fetching from backend
+- Displayed product cards with name, description, and price
+Bug Fix Commit:
+fix(cart): correct item count calculation in cart summary
+Documentation Commit:
+docs(README): add setup instructions for frontend
+
+- Included steps for setting up the frontend environment variables
+- Added prerequisites section
+Style Commit:
+style(products): improve product card layout for readability
+Refactoring Commit:
+refactor(auth): extract validation logic into a utility function
+Test Commit:
+test(products): add unit tests for product fetching functions
+Breaking Change Commit: If there’s a breaking change, include it in the footer prefixed with BREAKING CHANGE.
